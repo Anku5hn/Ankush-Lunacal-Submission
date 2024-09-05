@@ -1,0 +1,28 @@
+:root {
+  --grayOne: #616161d1;
+  --grayTwo: #363c43;
+  --grayThree: #969696;
+  --grayFour: #28292f;
+  --grayFive: #969696;
+  --blackOne: #171717;
+  --blackTwo: #101213;
+  --bodyOne: #373e44;
+  --bodyTwo: #191b1f;
+}
+
+body {
+  background-image: linear-gradient(to right, var(--bodyOne), var(--bodyTwo));
+  z-index: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+title {
+  font-weight: normal;
+  font-size: 12px;
+}

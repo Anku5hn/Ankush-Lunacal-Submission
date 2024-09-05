@@ -1,0 +1,116 @@
+.about-container {
+  border-radius: 19px;
+  background-color: var(--grayTwo);
+  height: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.about--help-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+.about--buttons {
+  background-color: var(--blackOne);
+  width: 500px;
+  height: 42px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about--buttons button {
+  background-color: var(--blackOne);
+  color: #a3adb2;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 16px;
+  z-index: 0;
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  background-image: none;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.about--text {
+  width: 500px;
+  height: 130px;
+  margin-left: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.about--text p {
+  color: var(--grayThree);
+  font-size: 20px;
+}
+.about--text::-webkit-scrollbar {
+  width: 8px;
+}
+.about--text::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  border-radius: 4px;
+  background-image: linear-gradient(#888989, #4a4e54);
+}
+
+.button-animation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #171717, #28292f);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+  z-index: -1;
+}
+.button-animation:hover::before {
+  transform: translateX(0);
+}
+.button-bg-gray {
+  background-color: var(--grayFour) !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 1107px) {
+  .about--buttons button {
+    font-size: 12px;
+  }
+  .about--buttons {
+    width: 420px;
+  }
+  .about--text {
+    width: 410px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .about--buttons {
+    width: 350px;
+    margin-left: 10px;
+  }
+  .about--text {
+    width: 350px;
+  }
+  .about--buttons button {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 919px) {
+  .about--buttons {
+    width: 300px;
+  }
+  .about--text {
+    width: 300px;
+  }
+}
